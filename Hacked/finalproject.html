@@ -1,0 +1,66 @@
+<!-- 
+Class: CPSC-335-05 Algorithms
+Project 3: Hexomino  Covering
+Team: BlaqBear
+Members: Brian "BJ" Warfield
+ --> 
+ <html lang="">    
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CPSC-335 Project 3</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <style> 
+      body {padding: 0; margin: 0;justify-content: center;}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+
+  #Main-container
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  #Grid-container 
+  {
+    display: grid;
+    grid-template-rows: repeat( var( --grid-rows ), 1fr );
+    grid-template-columns: repeat( var( --grid-cols), 1fr );
+    min-width: 300px;
+    min-height: 300px;
+    margin: 1em;
+  }
+
+  .grid-item 
+  {
+    padding: 20px;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 0.5em;
+  }
+  .grid-item.disabled 
+  {
+    background-color: gray;
+  }
+       </style> 
+    
+    </head>
+    <body> 
+      <div id='Main-container' class="container">
+        <div class="d-flex flex-column align-items-center">
+          <h1>Hexomino Covering</h1>
+          <p>Team: Blaq Bear</p>
+          <p>Members: BJ Warfield</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class=''id="Grid-container">
+              
+            </div>
+        </div>
+      </div>
+    </body>  
+  </html>
